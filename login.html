@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Login Sistema de Informacion</title>
+    <link rel="stylesheet" href="login2.css">
+    
+</head>
+<body>
+    <br>
+    <div class="contenedor_principal">
+        <header>
+            <br>
+            <br>
+            <br>
+            
+            <img src="mylogo.svg" alt="mi logo">
+
+        </header>
+        <section>
+            <h1>SISTEMA SPOPA&copy;</h1>
+        </section>
+        <br>
+        <main>
+            <form action="comprueba_login.php" method="POST" >
+                <table>
+                    <tr>
+                        <td>Usuario:</td>
+                        <td><label for="login"></label>
+                            <input type="text" name="login" id="login"></td>
+                    </tr>
+                    <tr>
+                        <td>Contraseña:</td>
+                        <td><label for="password"></label>
+                            <input type="password" name="password" id="password"></td></td>
+                    </tr>
+                <div class="contenedor_boton">
+                    <tr>
+                        <td colspan="2"><input class="boton" type="submit" name="Login" id="Login" value="Login"></td>
+                    </tr>
+                </div>
+                </table>
+            </form>
+        </main>
+        <br>
+    </div>
+    <br>
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+
+            <nav class="navegacion">
+                <a href="http://localhost/taller/formulario_registro/formulario_inserar_registros.php">Informacion </a>
+                    <a href="http://localhost/taller/formulario_registro/formulario_inserar_proveedores.php">Quienes Somos</a>
+            </nav>
+        <p class="copyright">Todos los derechos reservados 2019 &copy;</p>
+        </div>
+    </footer>
+
+</body>
+</html>

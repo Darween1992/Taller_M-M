@@ -1,0 +1,114 @@
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: cursive;
+    margin: 0%;
+    color:#E6E6FA;
+}
+body{
+    
+    
+    background-image: linear-gradient(rgba(0,0,0,0.705),rgba(240, 20, 148, 0.588)),url(header2.jpg);
+
+}
+.contenedor_principal{
+    text-align: center;
+    background-color:black;
+   
+    background-image: linear-gradient(rgba(0,0,0,0.705),rgba(1, 46, 11, 0.588)),url(header2.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    width: max-content;
+    margin: auto;
+    border-radius: 1rem;
+    border: solid white 0.1rem;
+    
+}
+img{
+
+    max-height: 15rem;
+    max-width: 15rem;
+
+
+}
+td{
+    color:#E6E6FA;
+    padding: 0.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.boton{
+    border-radius: 00.5rem;
+    height: 2rem;
+    width: 5rem;
+    font-weight: 800;
+}
+
+footer{
+    height: 10rem;
+}
+/*aqui*/
+.site-footer{
+    background-color: black;
+    background-image: linear-gradient(rgba(0,0,0,0.705),rgba(2, 71, 17, 0.588)),url(header2.jpg);
+
+    margin: 0;
+    height: 5rem;
+
+}
+
+.contenedor-footer{
+
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.copyright{
+
+    margin: 0;
+    color: #f5f5f5;
+
+}
+
+
+.contenido-nosotros{
+    display: grid;
+    /**grid-template-columns: 50% 50%; divide la pantalla en fracciones*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+
+}
+
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 3rem 0;
+
+}
+/**navegacion**/
+
+.navegacion a {
+    color:#E6E6FA;
+    text-decoration: none; /*quita la linea del enlace*/
+    font-size: 1rem; /* tamaño de fuente*/
+    margin-right: 1.5rem; /* separacion de siguiente elemento*/
+    background-color:rgb(141, 4, 79);
+    padding: 0.5rem;
+    border-radius: 20px;
+
+}
+
+.navegacion a:hover{ /*color que se colocda al colocar el mause emcima del elemento*/
+
+    color:black;
+}
+
+.navegacion a:last-of-type{
+    margin:0;
+
+}
+

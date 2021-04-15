@@ -1,0 +1,216 @@
+html{
+    box-sizing:border-box;
+    font-size: 62.5%; /*reset para< rems*/
+    
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+} 
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: black;
+}
+
+
+/**globales**/
+
+img{
+    max-width: 100%;
+
+}
+
+.contenedor{
+    max-width: 120rem; /* TOMA TODA ALTURA PERO CON UN MAXIMO DE 1200 PIXELES*/ 
+    margin-left: auto;  /*CENTRA EL CONTENEDOR TOAMDO ENCUENTA LA PANTALLA*/
+    margin-right: auto; /*CENTRA EL CONTENEDOR TOAMDO ENCUENTA LA PANTALLA*/
+    margin: 0 auto 0 auto;
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2.6rem;
+}
+
+
+/*utilidades*/
+
+.section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+.centrar-texto{
+  
+    text-align: center; 
+}
+
+.d-block{
+    display: block !important;
+}
+
+
+/*header*/
+
+.site-header{
+    background-color: #333333;  
+    padding: 1rem 0 3rem 0;
+
+}
+
+
+.site-header.inicio{
+
+    background-image: linear-gradient(rgba(0,0,0,0.705),rgba(240, 20, 148, 0.588)),url(../taller/img/header2.jpg);
+
+    height: 100vh;  /*la funcion 100vh hace ajustar la imagen de fondo a la altura de la pantalla*/
+    min-height: 60rem; /* establece un minimo de imagen de 600 pixeles*/
+    background-position: center center; /* Centra la imagen*/
+    background-size:cover;/*muestra toda la imagen*/
+}
+
+.logo3{
+   /* max-width: 100%;*/
+    height: 12.5rem;
+    width: 44.5rem;
+    
+    /*background-image: linear-gradient(rgba(0,0,0,0.705),rgba(19, 115, 31, 0.588)),url(../taller/img/logo3.png);
+*/
+}
+.LOGOP{
+    font-weight: 400;
+    font-size: 6rem;
+    color: white;
+}
+
+.contenidoheader{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.contenidoheader h1{
+    
+    color: white;
+    padding-top: 3rem;
+    max-width: 60rem;
+    line-height: 1.8;
+
+}
+
+
+
+
+
+.barra{
+    display: flex; /*vuelve flexible el contenido*/
+    justify-content: space-between;
+    padding-top: 3rem; /* da margen*/
+    align-items: center;/*alinea todo al centro del contenedor*/
+}
+
+/**navegacion**/
+
+.navegacion a {
+    color: white;
+    text-decoration: none; /*quita la linea del enlace*/
+    font-size: 1rem; /* tamaño de fuente*/
+    margin-right: 1rem; /* separacion de siguiente elemento*/
+    background-color:rgb(141, 4, 79);
+    padding: 0.5rem;
+    border-radius: 30px;
+
+}
+
+.navegacion a:hover{ /*color que se colocda al colocar el mause emcima del elemento*/
+
+    color:black;
+}
+
+.navegacion a:last-of-type{
+    margin:0;
+
+}
+
+/** iconos nosotros*/
+
+
+
+
+.iconos-nosotros{
+    display: flex; /*permite manipular el contenidor*/
+    justify-content: space-between; /*justifica el espacio*/
+}
+
+.icono{
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+
+}
+.icono h3{
+    text-transform: uppercase; /* transforma en mayusculas las minusculas*/
+
+}
+
+
+/**footer**/
+
+.site-footer{
+    background-color:  #333333;
+    background-image: linear-gradient(rgba(0,0,0,0.705),rgba(2, 71, 17, 0.588)),url(img/header2.jpg);
+    margin: 0;
+}
+
+.contenedor-footer{
+
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.copyright{
+
+    margin: 0;
+    color: #f5f5f5;
+
+}
+
+
+.contenido-nosotros{
+    display: grid;
+    /**grid-template-columns: 50% 50%; divide la pantalla en fracciones*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+
+}
+
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 3rem 0;
+
+}
+p{
+    color: white;
+}
+
